@@ -5,6 +5,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Talia {
+    public String hearts(String card, int index) {
+        String[] colors = card.split("[SHDC]");
+        String heart = colors[index];
+        return heart;
+    }
 
     public List<Card> getAll() {
         List<Card> cardList = new ArrayList<>();
